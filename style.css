@@ -1,20 +1,13 @@
 body {
   position:relative;
-
+  box-sizing: border-box;
   margin: 0;
-
   padding: 0;
-
   min-height: 100vh;
-
   display: flex;
-
   align-items: center;
-
   justify-content: center;  
-
   font-family: sans-serif;
-
   background: rgb(128,161,212);
   background: linear-gradient(180deg, rgba(128,161,212,1) 0%, rgba(247,246,240,1) 35%, rgba(244,189,198,1) 100%);  
 
@@ -30,6 +23,7 @@ body {
   font-size: 8vw;
   width: 100%;
   letter-spacing: 20px;
+  z-index: 1;
 }
 .container{
   /* max-width: 800px; */
@@ -38,40 +32,24 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   font-family: 'Merriweather', serif;
+  z-index: 2;
 }
 
 .container .card .icon {
-
   position: absolute;
-
   top: 0;
-
   left: 0;
-
   width: 100%;
-
   height: 100%;
-
-
-
 }
 
 .container .card .icon img {
-
   position: absolute;
-
   top: 50%;
-
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   font-size: 80px;
-
-
   height: 100%;
-
-
 }
 .joe, .Zerance{
   background-color: #fff;
@@ -87,69 +65,40 @@ body {
 }
 
 .container .card .slide {
-
   width: 300px;
-
   height: 200px;
-
   transition: 0.5s;
-
 }
 
 .container .card .slide.slide1 {
-
   position: relative;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   z-index: 1;
-
   transition: .7s;
-
   transform: translateY(100px);
-
 }
 
 .container .card:hover .slide.slide1{
-
   transform: translateY(0px);
-
 }
 
 .container .card .slide.slide2 {
-
   position: relative;
-
   display: flex;
-
   justify-content: center;
-
   align-items: center;
-
   padding: 20px;
-
   box-sizing: border-box;
-
   transition: .8s;
-
   transform: translateY(-100px);
-
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-
- 
-
   backdrop-filter: blur(30px);
-
 }
 
 .container .card:hover .slide.slide2{
-
   transform: translateY(0);
-
 }
 
 /* .container .card .slide.slide2::after{
@@ -192,37 +141,34 @@ body {
 }
 
 .container .card .slide.slide2 .content p {
-
   margin: 0;
-
   padding: 0;
-
   text-align: center;
-
   font-size: 12px;
-
   color: #101010;
   text-align: start;
-
-
 }
 
 .container .card .slide.slide2 .content h3 {
-
   margin: 0 0 10px 0;
-
   padding: 0;
-
   font-size: 18px;
-
   text-align: center;
-
   color:#101010;
-
 } 
 
 @media (min-width: 1700px) {
   .container{
     width: 60%;
+  }
+}
+@media (max-width: 768px){
+  .titre{
+    width: 100%;
+  }
+}
+@media (min-width: 875px) and (max-width: 1284px){
+  .titre{
+    top: 0;
   }
 }
