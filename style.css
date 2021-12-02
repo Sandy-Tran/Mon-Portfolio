@@ -78,6 +78,7 @@ body {
   z-index: 1;
   transition: .7s;
   transform: translateY(100px);
+  z-index: 3;
 }
 
 .container .card:hover .slide.slide1{
@@ -95,6 +96,7 @@ body {
   transform: translateY(-100px);
   box-shadow: 0 20px 40px rgba(0,0,0,0.4);
   backdrop-filter: blur(30px);
+  
 }
 
 .container .card:hover .slide.slide2{
