@@ -145,6 +145,31 @@ body {
   color:#101010;
 } 
 
+.mon_CV{
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 25px;
+  padding-right: 15px;
+  
+}
+.mon_CV > a{
+  font-family: 'Prompt', sans-serif;
+  text-decoration: none;
+  color: #101010;
+  border: #f5a0ae 2px solid;
+  background-color: #f5a0ae;
+  border-radius: 93px 93px 93px 93px / 76px 76px 76px 76px;
+  padding: 10px;
+  cursor:pointer;
+  /* transition: transform .1s; */
+}
+.mon_CV:hover{
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+}
+
 @media (min-width: 1700px) {
   .container{
     width: 60%;
